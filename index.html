@@ -6,7 +6,8 @@
     <title>3-6-24</title>
 </head>
 <body>
-  <center><h1>THE FAKESTORE COLLECTIONS</h1></center>
+  <center><h1>THE FAKESTORE FACTORY</h1></center>
+  
     <script>
         var data=[
   {
@@ -265,10 +266,13 @@ for(i=0;i<data.length;i++){
   card.append(tit)
   var cen=document.createElement("center")
   var btn=document.createElement("button")
-  var price=document.createElement("p")
-  price.innerText="BUY @ "+data[i].price;
-  price.style.fontSize="large"
-  btn.append(price)
+  var anc=document.createElement("a")
+  anc.setAttribute("href","anc.html")
+  anc.innerText="BUY @ "+data[i].price;
+  anc.style.fontSize="large"
+  anc.style.textDecoration="none"
+  anc.style.color="black"
+  btn.append(anc)
   btn.style.width="150px"
   btn.style.height="60px"
   btn.style.backgroundColor="skyblue"
